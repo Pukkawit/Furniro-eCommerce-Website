@@ -1,0 +1,147 @@
+@import "../../../sass/variable";
+@import "../../../sass/includes";
+
+#footer {
+  min-height: 22rem;
+  border-top: 0.15rem solid #e0e0e0;
+  width: 100%;
+  margin-top: 5rem;
+  padding: 0 4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  main {
+    margin-top: 2rem;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+
+    @include tabletLg {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      gap: 4rem;
+      margin-bottom: 2rem;
+    }
+    .column {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+
+      h3,
+      p {
+        height: 25px;
+
+        @include tabletLg {
+          height: 5px;
+        }
+      }
+    }
+    #menuFooter {
+      display: flex;
+      min-width: 18rem;
+      justify-content: space-between;
+
+      @include tabletLg {
+        text-align: left;
+        max-width: 100%;
+
+        div {
+          width: 100%;
+        }
+      }
+      #menuItems {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+        font-size: 0.8rem;
+        font-weight: 500;
+        text-align: left;
+
+        @include tabletLg {
+          gap: 1rem;
+          margin-bottom: 0;
+        }
+
+        li {
+          list-style: none;
+          font-weight: 500;
+          cursor: pointer;
+          transition: color ease-in-out 0.2s;
+          font-size: 0.85rem;
+          color: $Gray1;
+
+          &:hover {
+            color: $primary-color;
+          }
+
+          a {
+            color: unset;
+          }
+        }
+      }
+    }
+
+    .newsLetter {
+      display: flex;
+      flex-direction: column;
+      gap: 0.2rem;
+
+      @include tabletLg {
+        border-top: 1px solid $Gray5;
+        padding-top: 1rem;
+      }
+
+      .errorEmail {
+        font-size: 0.7rem;
+        color: red;
+        font-family: "Montserrat";
+        font-weight: 500;
+      }
+      .successEmail {
+        font-size: 0.7rem;
+        color: rgb(3, 156, 80);
+        font-family: "Montserrat";
+        font-weight: 500;
+      }
+
+      .newsletterForm {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+      }
+    }
+
+    input {
+      border: none;
+      border-bottom: 1px solid #000;
+      padding-bottom: 0.3rem;
+      outline: none;
+    }
+    button {
+      border: none;
+      padding: 0;
+      border-bottom: 1px solid #000;
+      padding-bottom: 0.3rem;
+      margin-left: 1rem;
+      background-color: transparent;
+      color: #000;
+      text-transform: uppercase;
+      font-weight: 600;
+      font-size: 0.8rem;
+      letter-spacing: 0.12rem;
+      transition: color ease-in-out 0.2s;
+
+      &:hover {
+        color: $primary-color;
+      }
+    }
+  }
+
+  footer {
+    border-top: 0.15rem solid #e0e0e0;
+    padding: 1.2rem 0;
+  }
+}

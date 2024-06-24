@@ -1,0 +1,79 @@
+@import "../../../../../sass/variable";
+@import "../../../../../sass/includes";
+
+#newArrival-box {
+  max-width: 32rem;
+  background-color: $light-orange;
+  padding: 3.63rem 2.69rem;
+  position: absolute;
+  top: 50%;
+  right: 3.5rem;
+  transform: translateY(-50%);
+
+  @include tabletLg {
+    max-width: 25rem;
+    padding: 2.3rem 2.3rem;
+  }
+  @include tablet {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-width: 350px;
+    text-align: center;
+    background-color: $light-orange-transparent;
+  }
+
+  .heading {
+    letter-spacing: 0.1875rem;
+    margin-bottom: 1rem;
+
+    @include tabletLg {
+      letter-spacing: 0.1rem;
+      margin-bottom: 0.5rem;
+    }
+  }
+  h2 {
+    text-align: left;
+    font-size: 3rem;
+    color: $primary-color;
+    line-height: 3.5rem;
+    margin-bottom: 0.5rem;
+
+    @include tabletLg {
+      font-size: 2.5rem;
+      line-height: 3rem;
+      margin-bottom: 1rem;
+    }
+    @include tablet {
+      font-size: 2rem;
+      line-height: 2.5rem;
+      margin-bottom: 0.8rem;
+      text-align: center;
+    }
+  }
+  p {
+    text-align: left;
+    color: $text-color2;
+    @include tablet {
+      text-align: center;
+    }
+  }
+  button {
+    text-transform: uppercase;
+    padding: 1.5rem 3.5rem;
+    font-weight: 700;
+    margin-top: 8vh;
+    transition: all ease-in-out 0.2s;
+    border: 1px solid transparent;
+    &:hover {
+      background-color: $white-color;
+      color: $primary-color;
+      border: 1px solid $primary-color;
+    }
+
+    @include tabletLg {
+      padding: 1rem 2.5rem;
+      font-weight: 700;
+    }
+  }
+}

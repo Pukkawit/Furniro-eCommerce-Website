@@ -1,0 +1,140 @@
+@import "../../../../sass/includes";
+@import "../../../../sass/variable";
+
+.comparison {
+  margin: auto;
+  margin-top: 2rem;
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  max-width: 60rem;
+  padding-bottom: 4rem;
+
+  .instruction {
+    width: 10rem;
+    h3 {
+      font-size: 1.2rem;
+      font-weight: 500;
+      margin-bottom: 1rem;
+      line-height: 1.3;
+    }
+    .button {
+      color: #727272;
+      font-size: 0.8rem;
+      display: flex;
+      justify-content: flex-start;
+      align-items: start;
+      border-bottom: 1px solid #727272;
+      width: 5rem;
+      cursor: pointer;
+    }
+  }
+
+  .product {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    .image {
+      width: 14rem;
+      height: 8rem;
+      background-color: $light-orange;
+      display: flex;
+      place-content: center;
+      border-radius: 8px;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        object-position: center;
+      }
+    }
+    .information {
+      display: flex;
+      flex-direction: column;
+      gap: 0.2rem;
+      h4 {
+        font-weight: 500;
+      }
+      .price p {
+        font-weight: 500;
+        color: $black-color;
+      }
+      .rating {
+        display: flex;
+        align-items: center;
+        .rating-figure {
+          font-weight: 500;
+          color: $black-color;
+          margin-right: 0.4rem;
+        }
+        .star {
+          display: flex;
+          margin-right: 0.4rem;
+          width: fit-content;
+
+          img {
+            width: 14px;
+          }
+        }
+        span {
+          display: flex;
+          padding-left: 0.5rem;
+          border-left: 1px solid $Gray4;
+          p {
+            font-size: 0.6rem;
+          }
+        }
+      }
+    }
+  }
+
+  .add-a-product {
+    h4 {
+      line-height: 2;
+    }
+
+    select {
+      border: none;
+      background-color: $primary-color;
+      color: $white-color;
+      padding: 0.4rem 1rem;
+      border-radius: 0.2rem;
+      outline: none;
+      cursor: pointer;
+    }
+  }
+}
+.technical-info {
+  margin: auto;
+  max-width: 60rem;
+  display: flex;
+  flex-direction: column;
+  row-gap: 2rem;
+  justify-content: flex-start;
+  border-top: 1px solid #e8e8e8;
+  .table-section {
+    table {
+      border-collapse: collapse;
+    }
+    th,
+    td {
+      border-left: 1px solid #e8e8e8;
+      border-right: 1px solid #e8e8e8;
+      text-align: left;
+      padding: 0.8rem 2rem;
+      width: 15rem;
+      vertical-align: top;
+    }
+    th {
+      padding-top: 2rem;
+    }
+    td {
+      font-size: 0.8rem;
+    }
+  }
+  button {
+    font-size: 0.8rem;
+    padding: 0.8rem 2rem;
+    font-weight: 400;
+  }
+}

@@ -1,0 +1,28 @@
+@import "../../../../sass/variable";
+
+#overlayUserEngagement {
+  position: absolute;
+  background-color: #0000008a;
+  height: 100%;
+  width: 100%;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: all ease-in-out 0.15s;
+
+  .cart-buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .actions {
+    display: flex;
+    width: 100%;
+    margin-top: 1rem;
+    gap: 0.8rem;
+  }
+}

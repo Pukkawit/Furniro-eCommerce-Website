@@ -1,0 +1,10 @@
+.delete-icon {
+  transition: fill 0.2s ease;
+  cursor: pointer;
+}
+.delete-icon .path {
+  transition: fill 0.2s ease;
+}
+.delete-icon:hover .path {
+  fill: rgb(211, 66, 66);
+}

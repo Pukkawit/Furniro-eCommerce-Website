@@ -1,0 +1,52 @@
+@import "../../../sass/includes";
+@import "../../../sass/variable";
+
+#pageHeader {
+  width: 100%;
+  height: 15rem;
+  background-image: url("https://res.cloudinary.com/dseqhd3ht/image/upload/v1718786612/shop_header_bg_jqazs3.png");
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  .container {
+    display: grid;
+    place-items: center;
+    gap: 0.7rem;
+    img {
+      width: 32px;
+    }
+
+    h1 {
+      font-size: 2rem;
+      font-weight: 500;
+    }
+
+    .nav {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.8rem;
+
+      span {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 0.8rem;
+        cursor: pointer;
+      }
+
+      .home {
+        font-weight: 600;
+      }
+
+      img {
+        width: 16px;
+        vertical-align: middle;
+      }
+    }
+  }
+}

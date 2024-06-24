@@ -1,0 +1,44 @@
+@import "../../../sass/variable";
+
+.error-div {
+  place-content: center;
+  text-align: center;
+  height: 100vh;
+  background-color: $primary-color;
+
+  h1,
+  h3,
+  p {
+    color: #fff;
+    text-align: center;
+    margin-bottom: 0;
+
+    &::before {
+      content: "";
+      display: none;
+    }
+  }
+  h1 {
+    font-weight: 400;
+    margin-bottom: 2rem;
+  }
+  h3 {
+    font-size: 1.5rem;
+    line-height: 3;
+  }
+  p,
+  a {
+    font-size: 1rem;
+    line-height: 1.2;
+    font-weight: 400;
+    text-decoration: none;
+    color: #fff;
+
+    span {
+      color: #c9ffe8;
+      letter-spacing: 0.05rem;
+      text-transform: uppercase;
+      font-weight: 600;
+    }
+  }
+}

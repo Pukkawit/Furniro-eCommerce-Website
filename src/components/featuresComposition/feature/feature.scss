@@ -1,0 +1,21 @@
+@import "../../../../sass/variable";
+
+#feature {
+  display: flex;
+  align-items: center;
+  gap: 0.2rem;
+
+  img {
+    width: 28px;
+    vertical-align: middle;
+  }
+  h5 {
+    font-size: 0.8rem;
+    line-height: 1.5;
+  }
+  p {
+    font-size: 0.7rem;
+    line-height: 1;
+    color: $Gray3;
+  }
+}

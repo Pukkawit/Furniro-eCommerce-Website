@@ -1,0 +1,25 @@
+@import "../../../../sass/includes";
+@import "../../../../sass/variable";
+
+#menuItems {
+  display: flex;
+  gap: 2.5rem;
+
+  @include tablet {
+    display: none;
+  }
+
+  li {
+    list-style: none;
+    font-size: 0.9rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: color ease-in-out 0.2s;
+    a {
+      color: unset;
+    }
+    &:hover {
+      color: $primary-color;
+    }
+  }
+}

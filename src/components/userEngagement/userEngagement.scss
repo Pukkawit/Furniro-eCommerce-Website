@@ -1,0 +1,22 @@
+@import "../../../sass/variable";
+
+#action {
+  display: flex;
+  align-items: center;
+  gap: 0.2rem;
+  cursor: pointer;
+
+  &:hover {
+    opacity: 0.7;
+  }
+
+  img {
+    width: 12px;
+  }
+
+  p {
+    color: $white-color;
+    font-size: 0.7rem;
+    margin: 0;
+  }
+}

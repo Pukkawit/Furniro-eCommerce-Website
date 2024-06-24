@@ -1,0 +1,87 @@
+@import "../../../../sass/includes";
+@import "../../../../sass/variable";
+
+#furniroFuniture {
+  max-width: 60rem;
+  margin: auto;
+  h5 {
+    color: $Gray3;
+    font-weight: 600;
+  }
+  h2,
+  h5 {
+    text-align: center;
+  }
+  img {
+    max-width: 400px;
+    max-height: 250px;
+  }
+
+  .images {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+
+    .leftBlock,
+    .rightBlock {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      .block1,
+      .block2,
+      .block3,
+      .block4 {
+        display: flex;
+        align-items: flex-start;
+        gap: 10px;
+      }
+      .block1 {
+        img {
+          &:nth-child(2) {
+            align-self: flex-end;
+            width: 300px;
+          }
+        }
+      }
+      .block2 {
+        img {
+          &:nth-child(1) {
+            width: 130px;
+          }
+          &:nth-child(2) {
+            width: 220px;
+          }
+        }
+      }
+      .block3 {
+        img {
+          &:nth-child(1) {
+            align-self: flex-end;
+            width: 180px;
+          }
+          &:nth-child(2) {
+            align-self: flex-end;
+            width: 180px;
+            height: 150%;
+          }
+        }
+      }
+      .block4 {
+        img {
+          &:nth-child(1) {
+            width: 110px;
+          }
+          &:nth-child(2) {
+            width: 150px;
+          }
+        }
+      }
+    }
+
+    .middleBlock {
+      place-content: center;
+    }
+  }
+}

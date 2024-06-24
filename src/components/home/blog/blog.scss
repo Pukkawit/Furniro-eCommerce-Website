@@ -1,0 +1,45 @@
+@import "../../../../sass/includes";
+@import "../../../../sass/variable";
+
+#blogPage {
+  .blog-page {
+    margin: auto;
+    margin-top: 4rem;
+    max-width: 60rem;
+    display: flex;
+    justify-content: space-between;
+
+    .sidebar {
+      display: flex;
+      flex-direction: column;
+      width: 260px;
+      .search-category {
+        .search-bar {
+          display: flex;
+          position: relative;
+          width: 100%;
+
+          input {
+            border: 1px solid #9f9f9f;
+            outline: none;
+            width: 100%;
+            padding: 1rem;
+            border-radius: 8px;
+          }
+
+          img {
+            width: 16px;
+            position: absolute;
+            right: 0.5rem;
+            top: 50%;
+            transform: translateY(-50%);
+          }
+        }
+      }
+      .categories-recent {
+        width: 100%;
+        padding: 1.5rem;
+      }
+    }
+  }
+}

@@ -1,0 +1,125 @@
+@import "../../../../sass/includes";
+@import "../../../../sass/variable";
+
+.content {
+  margin: auto;
+  display: flex;
+  align-items: flex-start;
+  margin-top: 2rem;
+  max-width: 64rem;
+  column-gap: 2rem;
+
+  .table-section {
+    table {
+      border-collapse: collapse;
+    }
+    thead {
+      background-color: $light-orange;
+      font-size: 0.9rem;
+    }
+    th,
+    td {
+      text-align: left;
+      padding: 0.8rem 0;
+      width: 8rem;
+      vertical-align: middle;
+    }
+
+    th {
+      font-weight: 500;
+    }
+
+    td {
+      font-size: 0.8rem;
+      padding-top: 2.8rem;
+      color: $Gray2;
+
+      .number {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 2rem;
+        height: 2rem;
+        border: 1px solid $Gray2;
+        border-radius: 6px;
+        color: $black-color;
+      }
+
+      .subtotal {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        color: $black-color;
+        cursor: pointer;
+        img {
+          width: 20px;
+        }
+      }
+    }
+  }
+  .image-bg {
+    height: 6rem;
+    display: grid;
+    place-content: center;
+    width: 6rem;
+    padding: 0.2rem;
+    background-color: $light-orange;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  .cart {
+    min-width: 300px;
+    min-height: 300px;
+    background-color: $light-orange;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    gap: 2rem;
+
+    h3 {
+      font-weight: 600;
+      margin-bottom: 1rem;
+    }
+
+    .totals {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+      .total-title {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+        .subtotal,
+        .total {
+          font-size: 0.9rem;
+          color: $black-color;
+        }
+      }
+      .total-figures {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+        align-items: end;
+
+        .total-amount {
+          color: $primary-color;
+          font-size: 1rem;
+        }
+      }
+    }
+
+    button {
+      padding: 0.7rem 2.5rem;
+      background-color: unset;
+      color: $black-color;
+      border: 1px solid $black-color;
+      border-radius: 0.5rem;
+    }
+  }
+}

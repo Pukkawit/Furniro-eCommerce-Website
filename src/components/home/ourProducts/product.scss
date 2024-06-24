@@ -1,0 +1,79 @@
+@import "../../../../sass/variable";
+@import "../../../../sass/includes";
+
+#product {
+  width: 14rem;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+
+  @include tablet {
+    width: 20rem;
+  }
+  @include mobile {
+    width: 16rem;
+  }
+
+  .status {
+    display: grid;
+    place-items: center;
+    height: 2.5rem;
+    width: 2.5rem;
+    background-color: transparent;
+    border-radius: 100%;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    p {
+      color: $white-color;
+      font-size: 0.7rem;
+      font-weight: 500;
+    }
+  }
+  .statusBlue {
+    background-color: $Blue-Accents;
+  }
+  .statusRed {
+    background-color: $Red-Accents;
+  }
+  .statusGreen {
+    background-color: $Green-Accents;
+  }
+  .red {
+    background-color: red;
+  }
+  img {
+    width: 100%;
+  }
+  .info {
+    display: flex;
+    align-items: flex-end;
+    width: 14rem;
+    background-color: $light-bg;
+    justify-content: space-between;
+    color: $Gray1;
+    padding: 1rem;
+
+    @include tablet {
+      width: 20rem;
+    }
+    @include mobile {
+      width: 16rem;
+    }
+
+    .left {
+      display: flex;
+      flex-direction: column;
+      gap: 0.3rem;
+    }
+
+    p {
+      color: $Gray3;
+    }
+    .discounted {
+      font-size: 0.75rem;
+      line-height: 2;
+      color: $Gray4;
+    }
+  }
+}

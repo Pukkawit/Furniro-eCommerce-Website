@@ -1,0 +1,110 @@
+{
+  "Users": [
+    {
+      "id": "monday@gmail.com"
+    }
+  ],
+  "NewsletterEmails": [
+    {
+      "id": "pukkawit@gmail.com"
+    },
+    {
+      "id": "mathyAmadi2@gmail.com"
+    }
+  ],
+  "AddedToCart": [
+    {
+      "id": 1,
+      "cloudName": "dseqhd3ht",
+      "publicId": "leviosa_dcv2qs",
+      "productName": "Leviosa",
+      "src": "https://res.cloudinary.com/dseqhd3ht/image/upload/v1718117922/leviosa_dcv2qs.png",
+      "price": "Rp 2.500.000"
+    },
+    {
+      "id": 8,
+      "cloudName": "dseqhd3ht",
+      "publicId": "Asgaard_sofa_3_j7dxaq",
+      "productName": "Asgaard sofa",
+      "src": "https://res.cloudinary.com/dseqhd3ht/image/upload/v1718821782/Asgaard_sofa_3_j7dxaq.jpg",
+      "price": "Rs. 250.000.00"
+    }
+  ],
+  "Likes": [
+    {
+      "id": "dseqhd3ht",
+      "publicId": "respira_dc7019",
+      "productName": "Respira"
+    },
+    {
+      "id": "dseqhd3ht",
+      "publicId": "muggo_rnafia",
+      "productName": "Muggo"
+    }
+  ],
+  "Blog": [
+    {
+      "id": "1",
+      "featureImage": "https://res.cloudinary.com/dseqhd3ht/image/upload/v1719059439/blog_feature_image1_eut70h.png",
+      "title": "Going all-in with millennial design",
+      "excerpt": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Mus mauris vitae ultricies leo integer malesuada nunc. In nulla posuere sollicitudin aliquam ultrices. Morbi blandit cursus risus at ultrices mi tempus imperdiet. Libero enim sed faucibus turpis in. Cursus mattis molestie a iaculis at erat. Nibh cras pulvinar mattis nunc sed blandit libero. Pellentesque elit ullamcorper dignissim cras tincidunt. Pharetra et ultrices neque ornare aenean euismod elementum.",
+      "role": "Admin",
+      "date": "14 Oct 2022",
+      "category": "Wood"
+    },
+    {
+      "id": "2",
+      "featureImage": "https://res.cloudinary.com/dseqhd3ht/image/upload/v1719059438/blog_feature_image2_hjct2j.png",
+      "title": "Exploring new ways of decorating",
+      "excerpt": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Mus mauris vitae ultricies leo integer malesuada nunc. In nulla posuere sollicitudin aliquam ultrices. Morbi blandit cursus risus at ultrices mi tempus imperdiet. Libero enim sed faucibus turpis in. Cursus mattis molestie a iaculis at erat. Nibh cras pulvinar mattis nunc sed blandit libero. Pellentesque elit ullamcorper dignissim cras tincidunt. Pharetra et ultrices neque ornare aenean euismod elementum.",
+      "role": "Admin",
+      "date": "14 Oct 2022",
+      "category": "Handmade"
+    },
+    {
+      "id": "3",
+      "featureImage": "https://res.cloudinary.com/dseqhd3ht/image/upload/v1719059438/blog_feature_image3_hzusy3.png",
+      "title": "Handmade pieces that took time to make",
+      "excerpt": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Mus mauris vitae ultricies leo integer malesuada nunc. In nulla posuere sollicitudin aliquam ultrices. Morbi blandit cursus risus at ultrices mi tempus imperdiet. Libero enim sed faucibus turpis in. Cursus mattis molestie a iaculis at erat. Nibh cras pulvinar mattis nunc sed blandit libero. Pellentesque elit ullamcorper dignissim cras tincidunt. Pharetra et ultrices neque ornare aenean euismod elementum.",
+      "role": "Admin",
+      "date": "14 Oct 2022",
+      "category": "Handmade"
+    },
+    {
+      "id": "4",
+      "featureImage": "https://res.cloudinary.com/dseqhd3ht/image/upload/v1719230961/modern_home_in_milan_wmdfhq.jpg",
+      "title": "Modern home in Milan",
+      "excerpt": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Mus mauris vitae ultricies leo integer malesuada nunc. In nulla posuere sollicitudin aliquam ultrices. Morbi blandit cursus risus at ultrices mi tempus imperdiet. Libero enim sed faucibus turpis in. Cursus mattis molestie a iaculis at erat. Nibh cras pulvinar mattis nunc sed blandit libero. Pellentesque elit ullamcorper dignissim cras tincidunt. Pharetra et ultrices neque ornare aenean euismod elementum.",
+      "role": "User",
+      "date": "03 Aug 2022",
+      "category": "Design"
+    },
+    {
+      "id": "5",
+      "featureImage": "https://res.cloudinary.com/dseqhd3ht/image/upload/v1719231165/colorful_ofifice_redesign_gvsgtv.jpg",
+      "title": "Colorful office redesign",
+      "excerpt": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Mus mauris vitae ultricies leo integer malesuada nunc. In nulla posuere sollicitudin aliquam ultrices. Morbi blandit cursus risus at ultrices mi tempus imperdiet. Libero enim sed faucibus turpis in. Cursus mattis molestie a iaculis at erat. Nibh cras pulvinar mattis nunc sed blandit libero. Pellentesque elit ullamcorper dignissim cras tincidunt. Pharetra et ultrices neque ornare aenean euismod elementum.",
+      "role": "Admin",
+      "date": "14 Oct 2022",
+      "category": "Handmade"
+    },
+    {
+      "id": "6",
+      "featureImage": "https://res.cloudinary.com/dseqhd3ht/image/upload/v1719059439/blog_feature_image1_eut70h.png",
+      "title": "Going all-in with millennial design",
+      "excerpt": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Mus mauris vitae ultricies leo integer malesuada nunc. In nulla posuere sollicitudin aliquam ultrices. Morbi blandit cursus risus at ultrices mi tempus imperdiet. Libero enim sed faucibus turpis in. Cursus mattis molestie a iaculis at erat. Nibh cras pulvinar mattis nunc sed blandit libero. Pellentesque elit ullamcorper dignissim cras tincidunt. Pharetra et ultrices neque ornare aenean euismod elementum.",
+      "role": "Admin",
+      "date": "14 Oct 2022",
+      "category": "Wood"
+    },
+    {
+      "id": "7",
+      "featureImage": "https://res.cloudinary.com/dseqhd3ht/image/upload/v1719059439/blog_feature_image1_eut70h.png",
+      "title": "Going all-in with millennial design",
+      "excerpt": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Mus mauris vitae ultricies leo integer malesuada nunc. In nulla posuere sollicitudin aliquam ultrices. Morbi blandit cursus risus at ultrices mi tempus imperdiet. Libero enim sed faucibus turpis in. Cursus mattis molestie a iaculis at erat. Nibh cras pulvinar mattis nunc sed blandit libero. Pellentesque elit ullamcorper dignissim cras tincidunt. Pharetra et ultrices neque ornare aenean euismod elementum.",
+      "role": "Admin",
+      "date": "14 Oct 2022",
+      "category": "Wood"
+    }
+  ]
+}

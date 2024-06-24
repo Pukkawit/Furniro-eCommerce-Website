@@ -1,0 +1,179 @@
+@import "../../../../sass/includes";
+@import "../../../../sass/variable";
+
+#Container {
+  margin: auto;
+  max-width: 60rem;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2rem;
+
+  .form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 0 0.5rem;
+    max-width: 350px;
+
+    .error {
+      color: red;
+      font-size: 0.8rem;
+    }
+    h1 {
+      font-size: 1.3rem;
+      font-weight: 600;
+      margin-bottom: 0.5rem;
+    }
+
+    .form-2-col {
+      display: flex;
+      column-gap: 1rem;
+    }
+    .form-group {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+
+      label {
+        font-size: 0.8rem;
+        color: $black-color;
+        font-weight: 500;
+      }
+
+      input,
+      select,
+      textArea {
+        border: 1px solid #9f9f9f;
+        border-radius: 6px;
+        outline: none;
+        padding: 1rem;
+        width: 100%;
+      }
+    }
+  }
+  .product-info {
+    max-width: 380px;
+    padding: 0 0.5rem;
+
+    .product-subtotal {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding-bottom: 2rem;
+      margin-bottom: 1rem;
+      border-bottom: 1px solid $Gray5;
+
+      .product,
+      .subtotal {
+        display: flex;
+        flex-direction: column;
+        row-gap: 1rem;
+        h4 {
+          font-weight: 500;
+        }
+      }
+      .product {
+        span {
+          color: $black-color;
+          font-weight: 500;
+          padding: 0 0.3rem;
+        }
+
+        .subT,
+        .total {
+          font-weight: 500;
+          color: $black-color;
+        }
+      }
+      .subtotal {
+        display: flex;
+        align-items: flex-end;
+
+        .total {
+          color: $primary-color;
+          font-size: 1.2rem;
+          font-weight: 700;
+        }
+      }
+    }
+    .payment-options {
+      flex-direction: column;
+      .radio-group {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+
+        .direct-bank-transfer {
+          display: flex;
+          flex-direction: column;
+
+          p {
+            font-size: 0.8rem;
+          }
+          .radioButton {
+            display: flex;
+            align-items: center;
+            column-gap: 0.7rem;
+            width: 100%;
+            position: relative;
+            cursor: pointer;
+
+            .option {
+              position: relative;
+
+              &::before {
+                content: "";
+                display: inline-block;
+                width: 10px;
+                height: 10px;
+                border-radius: 50%;
+                background-color: transparent;
+                position: absolute;
+                left: -2.5rem;
+                top: 50%;
+                transform: translateY(-50%);
+                border: 1px solid #9f9f9f;
+              }
+            }
+
+            input {
+              opacity: 0;
+              width: 30px;
+
+              &:checked + .option::before {
+                background-color: #000;
+              }
+            }
+          }
+
+          .directBankTransferInfo {
+            color: #9f9f9f;
+          }
+        }
+      }
+
+      .privacy-policy {
+        p {
+          font-weight: 300;
+          font-size: 0.7rem;
+          color: $black-color;
+          text-align: justify;
+
+          span {
+            font-weight: 600;
+          }
+        }
+      }
+    }
+
+    button {
+      background-color: unset;
+      color: $black-color;
+      border: 1px solid $black-color;
+      padding: 0.8rem 4rem;
+      border-radius: 0.6rem;
+      font-weight: 400;
+      align-self: center;
+    }
+  }
+}

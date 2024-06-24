@@ -1,0 +1,27 @@
+@import "../../../sass/variable";
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+
+  button {
+    margin: 0 5px;
+    padding: 10px 15px;
+    background-color: #f9f9f9;
+    color: $Gray1;
+    cursor: pointer;
+    font-weight: 500;
+
+    &:hover {
+      background-color: #ddd;
+    }
+
+    &.active {
+      background-color: $primary-color;
+      color: #fff;
+      border-radius: 6px;
+    }
+  }
+}

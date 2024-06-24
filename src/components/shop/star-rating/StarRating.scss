@@ -1,0 +1,33 @@
+.star-rating {
+  display: flex;
+  gap: 0.2rem;
+  margin-right: 0.4rem;
+}
+
+.star {
+  position: relative;
+  width: 18px;
+  height: 18px;
+  cursor: pointer;
+  /* margin-right: 2px; */
+}
+
+.star svg {
+  width: 100%;
+  height: 100%;
+}
+
+.star .star-back {
+  fill: #ccc;
+}
+
+.star.full .star-back,
+.star.full .star-front,
+.star.half .star-back {
+  fill: #ffca28;
+}
+
+.star.empty .star-front {
+  fill: #fff;
+  fill-opacity: 0;
+}

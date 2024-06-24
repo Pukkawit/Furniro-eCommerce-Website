@@ -1,0 +1,109 @@
+@import "../../../../sass/includes";
+@import "../../../../sass/variable";
+
+#shoppingCart {
+  position: absolute;
+  width: 22rem;
+  background-color: $white-color;
+  height: auto;
+  top: 0;
+  right: 0;
+  padding: 1.5rem 1.5rem;
+  z-index: 2;
+  min-height: 24rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  .heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    h2 {
+      font-weight: 600;
+      width: 80%;
+      border-bottom: 1.3px solid $Gray5;
+      padding-bottom: 1.5rem;
+    }
+
+    .lock-icon {
+      height: 3rem;
+
+      img {
+        width: 1rem;
+      }
+    }
+  }
+  .main {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    flex-grow: 1;
+    padding: 2rem 0;
+    padding-bottom: 1rem;
+    gap: 1.5rem;
+
+    .carted-products {
+      display: flex;
+      flex-direction: column;
+      row-gap: 2rem;
+      height: 100%;
+      flex-grow: 1;
+    }
+    p {
+      font-weight: 500;
+      font-size: 0.9rem;
+    }
+    .amount {
+      font-size: 0.9rem;
+      color: $primary-color;
+      font-weight: 600;
+    }
+    .subtotal-amount {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+  }
+  .shopping-cart-footer {
+    border-top: 1.3px solid $Gray5;
+    padding: 1.5rem 0;
+    border-radius: 1rem;
+    width: 100%;
+    height: 2rem;
+
+    .shopping-cart-footer.btns {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    footer-btns {
+      display: flex;
+      justify-content: space-between;
+      button {
+        background-color: unset;
+        color: $black-color;
+        font-size: 0.8rem;
+        font-weight: 400;
+        display: grid;
+        place-content: center;
+        border: 1px solid $black-color;
+        border-radius: 1rem;
+        padding: 0.2rem 1.2rem;
+        max-height: 1.5rem;
+        min-width: 4rem;
+        transition: all ease-in-out 0.2s;
+
+        &:hover {
+          color: $primary-color;
+          border-color: $primary-color;
+        }
+      }
+    }
+  }
+}
+.overlay {
+  top: 0 !important;
+  z-index: 1 !important;
+}

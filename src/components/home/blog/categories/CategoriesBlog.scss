@@ -1,0 +1,24 @@
+@import "../../../../../sass/includes";
+@import "../../../../../sass/variable";
+
+.category {
+  h3 {
+    font-weight: 500;
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+  }
+}
+.categories-data {
+  display: grid;
+  grid-template-columns: 10rem 1fr;
+  row-gap: 0.7rem;
+  margin-bottom: 2rem;
+
+  p {
+    font-size: 0.85rem;
+  }
+
+  .num {
+    text-align: right;
+  }
+}
