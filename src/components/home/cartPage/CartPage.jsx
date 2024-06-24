@@ -3,9 +3,15 @@ import "./cartPage.scss";
 import FeaturesComposition from "../../featuresComposition/FeaturesComposition";
 import PageHeader from "../../pageHeader/PageHeader";
 import { LazyLoadImage } from "react-lazy-load-image-component";
+import { useNavigate } from "react-router-dom";
 
 const CartPage = () => {
   const [addedToCart, setAddedToCart] = useState([]);
+  const navigate = useNavigate();
+
+  function handleCheckout() {
+    navigate("/checkout");
+  }
 
   useEffect(() => {
     fetch("http://localhost:3001/AddedToCart")
@@ -91,7 +97,9 @@ const CartPage = () => {
               </p>
             </div>
           </div>
-          <button>Check Out</button>
+          <button type="submit" onClick={handleCheckout}>
+            Check Out
+          </button>
         </div>
       </div>
       <FeaturesComposition />

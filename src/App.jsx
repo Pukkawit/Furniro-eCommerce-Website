@@ -50,7 +50,7 @@ function App() {
               path="/productComparison/:id"
               element={<ProductComparison />}
             />
-            <Route path="/checkOut/:id" element={<Checkout />} />
+            <Route path="/checkout" element={<Checkout />} />
             <Route path="/cart" element={<CartPage />} />
             <Route
               path="/productComparison/:id"
