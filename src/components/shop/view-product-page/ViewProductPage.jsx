@@ -9,6 +9,26 @@ import StarRating from "../star-rating/StarRating";
 import Products from "../../home/ourProducts/Products";
 
 const ViewProductPage = ({ product }) => {
+  const [largeSize, setLargeSize] = useState(true);
+  const [extraLargeSize, setExtraLargeSize] = useState(false);
+  const [extraSmallsize, setExtraSmallSize] = useState(false);
+
+  function handleLargeSize() {
+    setLargeSize(true);
+    setExtraLargeSize(false);
+    setExtraSmallSize(false);
+  }
+  function handleExtraLargeSize() {
+    setLargeSize(false);
+    setExtraLargeSize(true);
+    setExtraSmallSize(false);
+  }
+  function handleExtraSmallSize() {
+    setLargeSize(false);
+    setExtraLargeSize(false);
+    setExtraSmallSize(true);
+  }
+
   const navigate = useNavigate();
   const [rating, setRating] = useState(5);
   const handleNavToHome = () => {
@@ -124,9 +144,49 @@ const ViewProductPage = ({ product }) => {
               <div className="size-section">
                 <p className="description-bottom-size">Size</p>
                 <div className="sizes">
-                  <div className="large size highlighted">L</div>
-                  <div className="extra-large size">XL</div>
-                  <div className="extra-small size">XS</div>
+                  {largeSize ? (
+                    <div
+                      className="large size highlighted"
+                      onClick={handleLargeSize}
+                    >
+                      L
+                    </div>
+                  ) : (
+                    <div className="large size " onClick={handleLargeSize}>
+                      L
+                    </div>
+                  )}
+
+                  {extraLargeSize ? (
+                    <div
+                      className="extra-large size highlighted"
+                      onClick={handleExtraLargeSize}
+                    >
+                      XL
+                    </div>
+                  ) : (
+                    <div
+                      className="extra-large size "
+                      onClick={handleExtraLargeSize}
+                    >
+                      XL
+                    </div>
+                  )}
+                  {extraSmallsize ? (
+                    <div
+                      className="extra-small size highlighted"
+                      onClick={handleExtraSmallSize}
+                    >
+                      XS
+                    </div>
+                  ) : (
+                    <div
+                      className="extra-small size"
+                      onClick={handleExtraSmallSize}
+                    >
+                      XS
+                    </div>
+                  )}
                 </div>
               </div>
               <div className="colors-section">
