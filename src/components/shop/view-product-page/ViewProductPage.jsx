@@ -10,7 +10,7 @@ import Products from "../../home/ourProducts/Products";
 
 const ViewProductPage = ({ product }) => {
   const navigate = useNavigate();
-  const [rating, setRating] = useState(0);
+  const [rating, setRating] = useState(5);
   const handleNavToHome = () => {
     navigate("/");
   };
