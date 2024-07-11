@@ -25,7 +25,8 @@ Welcome to the eCommerce website project! This repository contains the code for 
 
 <ol>
 <li>Clone the repository:</li>
-<pre> git clone https://github.com/Pukkawit/Furniro-eCommerce-Website.git
+<pre> 
+git clone https://github.com/Pukkawit/Furniro-eCommerce-Website.git
 cd eCommerce-Website
 </pre>
 <li>Install the dependencies:</li>
