@@ -1,12 +1,12 @@
 import { useCallback, useEffect, useState } from "react";
 import axios from "axios";
 import { useRecoilState } from "recoil";
-import { ourProductsImages } from "../../src/assets/cloudImages/cloudImages";
-import { addedToCartState } from "../atoms/addedToCartState/addedToCartState";
+import { addedToCartState } from "../public/atoms/addedToCartState/addedToCartState";
+import { ourProductsImages } from "../src/assets/cloudImages/cloudImages";
 
-const useCart = (publicId, productName) => {
+const useAddToCart = (publicId, productName) => {
   const [addedToCart, setAddedToCart] = useState(false);
-  const [addsToCart, setAddsToCart] = useRecoilState(addedToCartState);
+  const [itemsInCart, setItemsInCart] = useRecoilState(addedToCartState);
 
   useEffect(() => {
     let isMounted = true;
@@ -57,7 +57,7 @@ const useCart = (publicId, productName) => {
           price,
         });
         setAddedToCart(true);
-        setAddsToCart((oldAddsToCart) => [
+        setItemsInCart((oldAddsToCart) => [
           ...oldAddsToCart,
           {
             id: Id,
@@ -65,46 +65,16 @@ const useCart = (publicId, productName) => {
             publicId: publicId,
             productName: productName,
             src: src,
+            price: price,
           },
         ]);
       } catch (error) {
         console.log(error);
       }
     }
-  }, [addedToCart, publicId, productName, setAddedToCart]);
+  }, [addedToCart, publicId, productName, setAddedToCart, setItemsInCart]);
 
-  const handleDeleteFromCart = async () => {
-    try {
-      const response = await axios.get("http://localhost:3001/AddedToCart");
-      const addedToCartProducts = response.data;
-      console.log("Added to cart products:", addedToCartProducts);
-
-      const productToDelete = addedToCartProducts.find(
-        (product) => product.publicId === publicId
-      );
-      console.log("Product to be deleted:", productToDelete);
-
-      if (productToDelete) {
-        const deleteResponse = await axios.delete(
-          `http://localhost:3001/AddedToCart/${productToDelete.id}`
-        );
-        console.log("Delete response:", deleteResponse);
-
-        setAddedToCart(false);
-        setAddsToCart((oldAddedToCart) =>
-          oldAddedToCart.filter(
-            (addedTocart) => addedTocart.publicId !== publicId
-          )
-        );
-      } else {
-        console.error("Product not found in addedToCartProducts");
-      }
-    } catch (error) {
-      console.error("Error during deletion:", error);
-    }
-  };
-
-  return { addedToCart, handleAddToCart, handleDeleteFromCart };
+  return { addedToCart, handleAddToCart };
 };
 
-export default useCart;
+export default useAddToCart;

@@ -3,12 +3,15 @@ import { LazyLoadImage } from "react-lazy-load-image-component";
 import "./productsshoppingcart.scss";
 import DeleteFromCartIcon from "../../../assets/icons/deleteFromCartIcon/DeleteFromCartIcon";
 import Modal from "../../modal/Modal";
-import useCart from "../../../../public/customHooks/useCart";
 import Overlay from "../../backdrop-overlay/Overlay";
+import { useRecoilState } from "recoil";
+import { shoppingCart } from "../../../../public/atoms/shoppingcart/shoppingCart";
+import useDeleteFromCart from "../../../../customHooks/useDeleteFromCart";
 
 const ProductsShoppingCart = ({ publicId, productName, src, price }) => {
   const [showModal, setShowModal] = useState(false);
-  const { addedToCart, handleDeleteFromCart } = useCart(publicId, productName);
+  const { handleDeleteFromCart } = useDeleteFromCart(publicId);
+  const [showShoppingCart, setShowShoppingCart] = useRecoilState(shoppingCart);
 
   const deleteFromCart = () => {
     handleDeleteFromCart();
@@ -20,6 +23,7 @@ const ProductsShoppingCart = ({ publicId, productName, src, price }) => {
   };
   const hideModal = () => {
     setShowModal(false);
+    setShowShoppingCart(false);
   };
   return (
     <div id="productsShoppingCart">

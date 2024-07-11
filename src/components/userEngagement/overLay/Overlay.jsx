@@ -4,9 +4,10 @@ import Share from "../userShare/Share";
 import Compare from "../compare/Compare";
 import Like from "../like/Like";
 import AddToCartButton from "../cartButtons/addToCartButton/AddToCartButton";
-import useCart from "../../../../public/customHooks/useCart";
+
 import ViewProductButton from "../cartButtons/viewProduct/ViewProductButton";
 import { useNavigate } from "react-router-dom";
+import useCart from "../../../../customHooks/useCart";
 
 const Overlay = ({
   actionLike,

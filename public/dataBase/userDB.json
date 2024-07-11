@@ -14,28 +14,12 @@
   ],
   "AddedToCart": [
     {
-      "id": "1",
+      "id": 2,
       "cloudName": "dseqhd3ht",
-      "publicId": "leviosa_dcv2qs",
-      "productName": "Leviosa",
-      "src": "https://res.cloudinary.com/dseqhd3ht/image/upload/v1718117922/leviosa_dcv2qs.png",
-      "price": "Rp 2.500.000"
-    },
-    {
-      "id": "8",
-      "cloudName": "dseqhd3ht",
-      "publicId": "Asgaard_sofa_3_j7dxaq",
-      "productName": "Asgaard sofa",
-      "src": "https://res.cloudinary.com/dseqhd3ht/image/upload/v1718821782/Asgaard_sofa_3_j7dxaq.jpg",
-      "price": "Rs. 250.000.00"
-    },
-    {
-      "id": 4,
-      "cloudName": "dseqhd3ht",
-      "publicId": "grifo_dnzx23",
-      "productName": "Grifo",
-      "src": "https://res.cloudinary.com/dseqhd3ht/image/upload/v1718117912/grifo_dnzx23.png",
-      "price": "Rp 1.500.000"
+      "publicId": "lolito_aqqc2f",
+      "productName": "Lolito",
+      "src": "https://res.cloudinary.com/dseqhd3ht/image/upload/v1718117925/lolito_aqqc2f.png",
+      "price": "Rp 7.000.000"
     }
   ],
   "Likes": [
@@ -43,11 +27,6 @@
       "id": "dseqhd3ht",
       "publicId": "muggo_rnafia",
       "productName": "Muggo"
-    },
-    {
-      "id": "dseqhd3ht",
-      "publicId": "grifo_dnzx23",
-      "productName": "Grifo"
     }
   ],
   "Blog": [

@@ -3,9 +3,8 @@ import "./shoppingcart.scss";
 import ProductsShoppingCart from "../productsShoppingCart/ProductsShoppingCart";
 import LockIcon from "../../../assets/icons/LockIcon";
 import { useRecoilState } from "recoil";
-import { shoppingCart } from "../../../../public/atoms/shoppintcart/shoppingCart";
+import { shoppingCart } from "../../../../public/atoms/shoppingcart/shoppingCart";
 import { useNavigate } from "react-router-dom";
-import axios from "axios";
 
 export const ShoppingCart = () => {
   const [showShoppingCart, setShowShoppingCart] = useRecoilState(shoppingCart);

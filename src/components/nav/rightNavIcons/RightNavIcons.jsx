@@ -12,7 +12,7 @@ import {
   addedToCartValueState,
 } from "../../../../public/atoms/addedToCartState/addedToCartState";
 import { ShoppingCart } from "../../shop/shoppingCart/ShoppingCart";
-import { shoppingCart } from "../../../../public/atoms/shoppintcart/shoppingCart";
+import { shoppingCart } from "../../../../public/atoms/shoppingcart/shoppingCart";
 
 const RightNavIcons = () => {
   const [likes, setLikes] = useRecoilState(likesStates);
