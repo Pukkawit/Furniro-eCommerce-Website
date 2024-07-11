@@ -5,7 +5,7 @@ Welcome to the eCommerce website project! This repository contains the code for 
 ## Features
 
 <ul>
-<li><strong>Add to Like</strong>: Click on the heart icon to add items to your favorites list.</li>
+<li><strong>Add to Liked</strong>: Click on the heart icon to add items to your favorites list.</li>
 <li><strong>Add to Cart</strong>: Add items to the cart. The "Add to Cart" button changes to "View Product" once an item is added.</li>
 <li><strong>Cart Icon</strong>: Click the cart icon to view the products in your cart and see the total price.</li>
 <li><strong>Checkout</strong>: Proceed to checkout from the cart.</li>
